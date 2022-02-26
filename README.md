@@ -1,5 +1,5 @@
-# weird-javascript
-The Weird JavaScipt course of Fireship on (YouTube)[https://www.youtube.com/watch?v=f0DrPLKf6Ro&list=PL0vfts4VzfNixzfaQWwDUg3W5TRbE7CyI&index=6]. 
+# Weird JavaScript Course
+The Weird JavaScipt course of Fireship on [YouTube](https://www.youtube.com/watch?v=f0DrPLKf6Ro&list=PL0vfts4VzfNixzfaQWwDUg3W5TRbE7CyI&index=6). 
 
 The course has seven episodes:
   1. The Weird History of JavaScript
