@@ -1,0 +1,65 @@
+<!DOCTYPE html>
+<html>
+    <head>
+        <meta charset="utf-8">
+        <meta http-equiv="X-UA-Compatible" content="IE=edge">
+        <title>Progress Bar</title>
+        <meta name="description" content="">
+        <meta name="viewport" content="width=device-width, initial-scale=1">
+        <link rel="stylesheet" href="">
+    </head>
+    <body>
+        
+        <div class="bar-container">
+            <div class="bar"/>
+        </div>
+
+        <div class="bar-container">
+            <div class="bar-css"/>
+        </div>
+
+        <button onclick="fillBar(2)">Start</button>
+
+        <button onclick="fillBarCSS(2)">Start 2</button>
+
+        <script>
+            function fillBar(seconds) {
+                const bar = document.querySelector('.bar');
+                let atPercent = 0;
+                const interval = setInterval(() => {
+                    bar.style.width = atPercent + '%';
+                    atPercent++;
+                    console.log('running at', atPercent);
+                    if (atPercent >= 101) {
+                        clearInterval(interval);
+                    }
+                }, (seconds * 1000) / 100);
+            }
+
+            function fillBarCSS(seconds) {
+                const bar = document.querySelector('.bar-css');
+                bar.style.transition = `${seconds}s linear width`;
+                bar.style.width = '100%';
+            }
+        </script>
+
+        <style>
+            body {
+                background-color: lightgray;
+            }
+
+            .bar-container {
+                width: 200px;
+                height: 30px;
+                margin: 40px;
+                background-color: grey;
+            }
+
+            .bar {
+                background-color: green;
+                height: 100%;
+                width: 0%;
+            }
+        </style>
+    </body>
+</html>

@@ -1,0 +1,16 @@
+Topic (choices at the time): 
+Screen recorder that can convert to GIF files;
+Server-side Rendered Technical Blog;
+Colormap;
+Zuoti Web Application
+
+Background:
+
+
+Problem:
+
+
+Solution:
+
+Benefits:
+
